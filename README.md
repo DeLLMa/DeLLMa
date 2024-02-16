@@ -1,4 +1,4 @@
-# dellma
+# DeLLMa: A Framework for Decision Making Under Uncertainty with Large Language Models
 
 Reproduce DeLLMa results by running
 
