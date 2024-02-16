@@ -1,0 +1,202 @@
+{
+    "economic health": {
+        "growth": "somewhat likely",
+        "stable": "likely",
+        "recession": "somewhat unlikely"
+    },
+    "market sentiment and investor psychology": {
+        "optimistic": "somewhat likely",
+        "neutral": "likely",
+        "pessimistic": "somewhat unlikely"
+    },
+    "political events and government policies": {
+        "stable": "likely",
+        "minor changes": "somewhat likely",
+        "major upheaval": "unlikely"
+    },
+    "natural disasters and other 'black swan' events": {
+        "none": "likely",
+        "minor impact": "somewhat likely",
+        "major impact": "unlikely"
+    },
+    "geopolitical issues": {
+        "stable": "somewhat likely",
+        "tensions rising": "likely",
+        "escalation to conflict": "unlikely"
+    },
+    "merges and major acquisitions related to advanced micro devices (amd)": {
+        "none": "very likely",
+        "minor": "somewhat unlikely",
+        "major": "unlikely"
+    },
+    "regulatory changes and legal issues happened to advanced micro devices (amd)": {
+        "none": "likely",
+        "minor": "somewhat likely",
+        "major": "unlikely"
+    },
+    "financial health of advanced micro devices (amd)": {
+        "strong": "somewhat likely",
+        "stable": "likely",
+        "weak": "somewhat unlikely"
+    },
+    "company growth of advanced micro devices (amd)": {
+        "rapid": "somewhat likely",
+        "moderate": "likely",
+        "stagnant": "somewhat unlikely"
+    },
+    "company product launches of advanced micro devices (amd)": {
+        "successful": "somewhat likely",
+        "moderate impact": "likely",
+        "unsuccessful": "somewhat unlikely"
+    },
+    "merges and major acquisitions related to the walt disney company (dis)": {
+        "none": "very likely",
+        "minor": "somewhat unlikely",
+        "major": "unlikely"
+    },
+    "regulatory changes and legal issues happened to the walt disney company (dis)": {
+        "none": "likely",
+        "minor": "somewhat likely",
+        "major": "unlikely"
+    },
+    "financial health of the walt disney company (dis)": {
+        "strong": "somewhat likely",
+        "stable": "likely",
+        "weak": "somewhat unlikely"
+    },
+    "company growth of the walt disney company (dis)": {
+        "rapid": "somewhat unlikely",
+        "moderate": "likely",
+        "stagnant": "somewhat likely"
+    },
+    "company product launches of the walt disney company (dis)": {
+        "successful": "somewhat likely",
+        "moderate impact": "likely",
+        "unsuccessful": "somewhat unlikely"
+    },
+    "merges and major acquisitions related to gamestop corp (gme)": {
+        "none": "very likely",
+        "minor": "somewhat unlikely",
+        "major": "unlikely"
+    },
+    "regulatory changes and legal issues happened to gamestop corp (gme)": {
+        "none": "likely",
+        "minor": "somewhat likely",
+        "major": "unlikely"
+    },
+    "financial health of gamestop corp (gme)": {
+        "strong": "unlikely",
+        "stable": "somewhat unlikely",
+        "weak": "likely"
+    },
+    "company growth of gamestop corp (gme)": {
+        "rapid": "unlikely",
+        "moderate": "somewhat unlikely",
+        "stagnant": "likely"
+    },
+    "company product launches of gamestop corp (gme)": {
+        "successful": "somewhat unlikely",
+        "moderate impact": "likely",
+        "unsuccessful": "somewhat likely"
+    },
+    "merges and major acquisitions related to alphabet, i.e. google (googl)": {
+        "none": "very likely",
+        "minor": "somewhat unlikely",
+        "major": "unlikely"
+    },
+    "regulatory changes and legal issues happened to alphabet, i.e. google (googl)": {
+        "none": "likely",
+        "minor": "somewhat likely",
+        "major": "unlikely"
+    },
+    "financial health of alphabet, i.e. google (googl)": {
+        "strong": "likely",
+        "stable": "somewhat likely",
+        "weak": "unlikely"
+    },
+    "company growth of alphabet, i.e. google (googl)": {
+        "rapid": "somewhat likely",
+        "moderate": "likely",
+        "stagnant": "somewhat unlikely"
+    },
+    "company product launches of alphabet, i.e. google (googl)": {
+        "successful": "somewhat likely",
+        "moderate impact": "likely",
+        "unsuccessful": "somewhat unlikely"
+    },
+    "merges and major acquisitions related to meta platforms, i.e. facebook (meta)": {
+        "none": "very likely",
+        "minor": "somewhat unlikely",
+        "major": "unlikely"
+    },
+    "regulatory changes and legal issues happened to meta platforms, i.e. facebook (meta)": {
+        "none": "likely",
+        "minor": "somewhat likely",
+        "major": "unlikely"
+    },
+    "financial health of meta platforms, i.e. facebook (meta)": {
+        "strong": "somewhat likely",
+        "stable": "likely",
+        "weak": "somewhat unlikely"
+    },
+    "company growth of meta platforms, i.e. facebook (meta)": {
+        "rapid": "somewhat likely",
+        "moderate": "likely",
+        "stagnant": "somewhat unlikely"
+    },
+    "company product launches of meta platforms, i.e. facebook (meta)": {
+        "successful": "somewhat likely",
+        "moderate impact": "likely",
+        "unsuccessful": "somewhat unlikely"
+    },
+    "merges and major acquisitions related to nvidia (nvda)": {
+        "none": "very likely",
+        "minor": "somewhat unlikely",
+        "major": "unlikely"
+    },
+    "regulatory changes and legal issues happened to nvidia (nvda)": {
+        "none": "likely",
+        "minor": "somewhat likely",
+        "major": "unlikely"
+    },
+    "financial health of nvidia (nvda)": {
+        "strong": "somewhat likely",
+        "stable": "likely",
+        "weak": "somewhat unlikely"
+    },
+    "company growth of nvidia (nvda)": {
+        "rapid": "somewhat likely",
+        "moderate": "likely",
+        "stagnant": "somewhat unlikely"
+    },
+    "company product launches of nvidia (nvda)": {
+        "successful": "somewhat likely",
+        "moderate impact": "likely",
+        "unsuccessful": "somewhat unlikely"
+    },
+    "merges and major acquisitions related to s&p 500 (spy)": {
+        "none": "very likely",
+        "minor": "somewhat unlikely",
+        "major": "unlikely"
+    },
+    "regulatory changes and legal issues happened to s&p 500 (spy)": {
+        "none": "likely",
+        "minor": "somewhat likely",
+        "major": "unlikely"
+    },
+    "financial health of s&p 500 (spy)": {
+        "strong": "somewhat likely",
+        "stable": "likely",
+        "weak": "somewhat unlikely"
+    },
+    "company growth of s&p 500 (spy)": {
+        "rapid": "somewhat likely",
+        "moderate": "likely",
+        "stagnant": "somewhat unlikely"
+    },
+    "company product launches of s&p 500 (spy)": {
+        "successful": "somewhat likely",
+        "moderate impact": "likely",
+        "unsuccessful": "somewhat unlikely"
+    }
+}

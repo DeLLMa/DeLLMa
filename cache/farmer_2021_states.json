@@ -1,0 +1,92 @@
+{
+    "climate condition": {
+        "continued drought": "very likely",
+        "mild improvement": "somewhat likely",
+        "significant improvement": "unlikely"
+    },
+    "supply chain disruptions": {
+        "minor disruptions": "somewhat likely",
+        "moderate disruptions": "likely",
+        "severe disruptions": "somewhat unlikely"
+    },
+    "apple price change": {
+        "increase": "somewhat likely",
+        "no change": "likely",
+        "decrease": "somewhat unlikely"
+    },
+    "apple yield change": {
+        "increase": "somewhat unlikely",
+        "no change": "likely",
+        "decrease": "somewhat likely"
+    },
+    "avocado price change": {
+        "increase": "likely",
+        "no change": "somewhat likely",
+        "decrease": "unlikely"
+    },
+    "avocado yield change": {
+        "increase": "unlikely",
+        "no change": "somewhat likely",
+        "decrease": "likely"
+    },
+    "grape price change": {
+        "increase": "somewhat likely",
+        "no change": "likely",
+        "decrease": "somewhat unlikely"
+    },
+    "grape yield change": {
+        "increase": "somewhat unlikely",
+        "no change": "somewhat likely",
+        "decrease": "likely"
+    },
+    "grapefruit price change": {
+        "increase": "likely",
+        "no change": "somewhat likely",
+        "decrease": "unlikely"
+    },
+    "grapefruit yield change": {
+        "increase": "unlikely",
+        "no change": "somewhat likely",
+        "decrease": "very likely"
+    },
+    "lemon price change": {
+        "increase": "somewhat likely",
+        "no change": "likely",
+        "decrease": "somewhat unlikely"
+    },
+    "lemon yield change": {
+        "increase": "unlikely",
+        "no change": "somewhat likely",
+        "decrease": "likely"
+    },
+    "peach price change": {
+        "increase": "somewhat likely",
+        "no change": "likely",
+        "decrease": "somewhat unlikely"
+    },
+    "peach yield change": {
+        "increase": "somewhat likely",
+        "no change": "likely",
+        "decrease": "somewhat unlikely"
+    },
+    "pear price change": {
+        "increase": "somewhat likely",
+        "no change": "likely",
+        "decrease": "somewhat unlikely"
+    },
+    "pear yield change": {
+        "increase": "somewhat unlikely",
+        "no change": "somewhat likely",
+        "decrease": "likely"
+    },
+    "strawberry price change": {
+        "increase": "somewhat likely",
+        "no change": "likely",
+        "decrease": "somewhat unlikely"
+    },
+    "strawberry yield change": {
+        "increase": "likely",
+        "no change": "somewhat likely",
+        "decrease": "somewhat unlikely"
+    }
+}

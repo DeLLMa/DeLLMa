@@ -1,0 +1,102 @@
+Below are the stocks I am considering: DIS, NVDA, SPY. I would like to know which stock I should buy based on the information of their historical prices in the last 24 months.
+I can only buy one stock and I have a budget of 10000 dollars. I would like to maximize my profit. Today is 2023-12-01. I'm buying stocks today and will sell them at the end of the month (2023-12-29).
+
+Below are the information about stock DIS (i.e. The Walt Disney Company). Units are in dollars per share.
+    Current Price: 92.74.
+    Historical Prices:
+	2021-12: 150.90
+	2022-01: 148.70
+	2022-02: 147.93
+	2022-03: 138.19
+	2022-04: 126.69
+	2022-05: 107.49
+	2022-06: 99.54
+	2022-07: 98.62
+	2022-08: 114.58
+	2022-09: 106.75
+	2022-10: 99.64
+	2022-11: 96.48
+	2022-12: 90.83
+	2023-01: 100.47
+	2023-02: 106.66
+	2023-03: 96.30
+	2023-04: 99.66
+	2023-05: 94.40
+	2023-06: 90.62
+	2023-07: 87.75
+	2023-08: 86.27
+	2023-09: 82.07
+	2023-10: 82.62
+	2023-11: 90.37
+
+Below are the information about stock NVDA (i.e. NVIDIA). Units are in dollars per share.
+    Current Price: 465.25.
+    Historical Prices:
+	2021-12: 299.31
+	2022-01: 257.70
+	2022-02: 246.29
+	2022-03: 248.52
+	2022-04: 219.61
+	2022-05: 177.91
+	2022-06: 170.16
+	2022-07: 163.30
+	2022-08: 177.62
+	2022-09: 131.74
+	2022-10: 124.70
+	2022-11: 153.14
+	2022-12: 162.12
+	2023-01: 172.73
+	2023-02: 220.43
+	2023-03: 251.07
+	2023-04: 271.49
+	2023-05: 310.57
+	2023-06: 409.22
+	2023-07: 447.63
+	2023-08: 452.54
+	2023-09: 443.24
+	2023-10: 436.35
+	2023-11: 475.31
+
+Below are the information about stock SPY (i.e. S&P 500). Units are in dollars per share.
+    Current Price: 455.77.
+    Historical Prices:
+	2021-12: 466.41
+	2022-01: 455.85
+	2022-02: 442.54
+	2022-03: 438.15
+	2022-04: 437.82
+	2022-05: 403.34
+	2022-06: 389.17
+	2022-07: 389.97
+	2022-08: 415.12
+	2022-09: 384.23
+	2022-10: 371.56
+	2022-11: 391.12
+	2022-12: 390.38
+	2023-01: 394.70
+	2023-02: 407.07
+	2023-03: 396.02
+	2023-04: 410.92
+	2023-05: 413.88
+	2023-06: 433.68
+	2023-07: 449.45
+	2023-08: 444.92
+	2023-09: 439.93
+	2023-10: 425.66
+	2023-11: 445.25
+
+
+
+I'm a trader planning my next move. I would like to maximize my profit with '10000' dollars.
+
+Below are the actions I can take:
+Action 1. DIS: 10000 dollars
+Action 2. NVDA: 10000 dollars
+Action 3. SPY: 10000 dollars
+
+
+
+I would like to know which action I should take based on the information provided above.
+You should format your response as a JSON object. The JSON object should contain the following keys:
+- decision: a string that describes the action you recommend the trader to take. The output format should be the same as the format of the actions listed above, e.g. Action 1. DIS: 10000 dollars
+- explanation: a string that describes, in detail, the reasoning behind your decision. You should include information on the expected price of each stock, as well as factors that affect them.

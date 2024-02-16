@@ -1,0 +1,102 @@
+Below are the stocks I am considering: AMD, DIS, GOOGL. I would like to know which stock I should buy based on the information of their historical prices in the last 24 months.
+I can only buy one stock and I have a budget of 10000 dollars. I would like to maximize my profit. Today is 2023-12-01. I'm buying stocks today and will sell them at the end of the month (2023-12-29).
+
+Below are the information about stock AMD (i.e. Advanced Micro Devices). Units are in dollars per share.
+    Current Price: 119.88.
+    Historical Prices:
+	2021-12: 143.49
+	2022-01: 126.84
+	2022-02: 119.63
+	2022-03: 112.68
+	2022-04: 95.80
+	2022-05: 94.27
+	2022-06: 90.85
+	2022-07: 82.90
+	2022-08: 96.37
+	2022-09: 74.99
+	2022-10: 60.32
+	2022-11: 69.61
+	2022-12: 68.09
+	2023-01: 70.27
+	2023-02: 82.07
+	2023-03: 90.47
+	2023-04: 90.81
+	2023-05: 102.22
+	2023-06: 117.79
+	2023-07: 113.69
+	2023-08: 108.82
+	2023-09: 103.11
+	2023-10: 102.56
+	2023-11: 117.59
+
+Below are the information about stock DIS (i.e. The Walt Disney Company). Units are in dollars per share.
+    Current Price: 92.74.
+    Historical Prices:
+	2021-12: 150.90
+	2022-01: 148.70
+	2022-02: 147.93
+	2022-03: 138.19
+	2022-04: 126.69
+	2022-05: 107.49
+	2022-06: 99.54
+	2022-07: 98.62
+	2022-08: 114.58
+	2022-09: 106.75
+	2022-10: 99.64
+	2022-11: 96.48
+	2022-12: 90.83
+	2023-01: 100.47
+	2023-02: 106.66
+	2023-03: 96.30
+	2023-04: 99.66
+	2023-05: 94.40
+	2023-06: 90.62
+	2023-07: 87.75
+	2023-08: 86.27
+	2023-09: 82.07
+	2023-10: 82.62
+	2023-11: 90.37
+
+Below are the information about stock GOOGL (i.e. Alphabet, i.e. Google). Units are in dollars per share.
+    Current Price: 131.86.
+    Historical Prices:
+	2021-12: 145.15
+	2022-01: 135.96
+	2022-02: 136.71
+	2022-03: 134.98
+	2022-04: 128.07
+	2022-05: 113.19
+	2022-06: 112.43
+	2022-07: 112.65
+	2022-08: 116.26
+	2022-09: 103.33
+	2022-10: 98.88
+	2022-11: 93.91
+	2022-12: 92.32
+	2023-01: 93.04
+	2023-02: 96.42
+	2023-03: 98.06
+	2023-04: 105.71
+	2023-05: 116.12
+	2023-06: 122.53
+	2023-07: 123.05
+	2023-08: 130.55
+	2023-09: 134.30
+	2023-10: 134.18
+	2023-11: 133.38
+
+
+
+I'm a trader planning my next move. I would like to maximize my profit with '10000' dollars.
+
+Below are the actions I can take:
+Action 1. AMD: 10000 dollars
+Action 2. DIS: 10000 dollars
+Action 3. GOOGL: 10000 dollars
+
+
+
+I would like to know which action I should take based on the information provided above.
+You should format your response as a JSON object. The JSON object should contain the following keys:
+- decision: a string that describes the action you recommend the trader to take. The output format should be the same as the format of the actions listed above, e.g. Action 1. AMD: 10000 dollars
+- explanation: a string that describes, in detail, the reasoning behind your decision. You should include information on the expected price of each stock, as well as factors that affect them.

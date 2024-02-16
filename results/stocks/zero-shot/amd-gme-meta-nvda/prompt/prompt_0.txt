@@ -1,0 +1,131 @@
+Below are the stocks I am considering: AMD, GME, META, NVDA. I would like to know which stock I should buy based on the information of their historical prices in the last 24 months.
+I can only buy one stock and I have a budget of 10000 dollars. I would like to maximize my profit. Today is 2023-12-01. I'm buying stocks today and will sell them at the end of the month (2023-12-29).
+
+Below are the information about stock AMD (i.e. Advanced Micro Devices). Units are in dollars per share.
+    Current Price: 119.88.
+    Historical Prices:
+	2021-12: 143.49
+	2022-01: 126.84
+	2022-02: 119.63
+	2022-03: 112.68
+	2022-04: 95.80
+	2022-05: 94.27
+	2022-06: 90.85
+	2022-07: 82.90
+	2022-08: 96.37
+	2022-09: 74.99
+	2022-10: 60.32
+	2022-11: 69.61
+	2022-12: 68.09
+	2023-01: 70.27
+	2023-02: 82.07
+	2023-03: 90.47
+	2023-04: 90.81
+	2023-05: 102.22
+	2023-06: 117.79
+	2023-07: 113.69
+	2023-08: 108.82
+	2023-09: 103.11
+	2023-10: 102.56
+	2023-11: 117.59
+
+Below are the information about stock GME (i.e. GameStop Corp). Units are in dollars per share.
+    Current Price: 14.52.
+    Historical Prices:
+	2021-12: 39.48
+	2022-01: 29.49
+	2022-02: 29.20
+	2022-03: 29.93
+	2022-04: 36.32
+	2022-05: 26.57
+	2022-06: 32.74
+	2022-07: 34.21
+	2022-08: 36.60
+	2022-09: 26.81
+	2022-10: 25.85
+	2022-11: 26.21
+	2022-12: 21.54
+	2023-01: 19.60
+	2023-02: 20.84
+	2023-03: 19.42
+	2023-04: 21.27
+	2023-05: 21.65
+	2023-06: 24.38
+	2023-07: 23.04
+	2023-08: 19.12
+	2023-09: 17.66
+	2023-10: 14.33
+	2023-11: 13.15
+
+Below are the information about stock META (i.e. Meta Platforms, i.e. Facebook). Units are in dollars per share.
+    Current Price: 325.48.
+    Historical Prices:
+	2021-12: 330.85
+	2022-01: 319.41
+	2022-02: 228.44
+	2022-03: 207.26
+	2022-04: 208.24
+	2022-05: 197.74
+	2022-06: 173.50
+	2022-07: 167.36
+	2022-08: 168.56
+	2022-09: 149.96
+	2022-10: 127.92
+	2022-11: 106.40
+	2022-12: 117.96
+	2023-01: 137.25
+	2023-02: 176.48
+	2023-03: 193.94
+	2023-04: 217.20
+	2023-05: 243.36
+	2023-06: 277.06
+	2023-07: 303.14
+	2023-08: 299.86
+	2023-09: 301.12
+	2023-10: 310.87
+	2023-11: 328.49
+
+Below are the information about stock NVDA (i.e. NVIDIA). Units are in dollars per share.
+    Current Price: 465.25.
+    Historical Prices:
+	2021-12: 299.31
+	2022-01: 257.70
+	2022-02: 246.29
+	2022-03: 248.52
+	2022-04: 219.61
+	2022-05: 177.91
+	2022-06: 170.16
+	2022-07: 163.30
+	2022-08: 177.62
+	2022-09: 131.74
+	2022-10: 124.70
+	2022-11: 153.14
+	2022-12: 162.12
+	2023-01: 172.73
+	2023-02: 220.43
+	2023-03: 251.07
+	2023-04: 271.49
+	2023-05: 310.57
+	2023-06: 409.22
+	2023-07: 447.63
+	2023-08: 452.54
+	2023-09: 443.24
+	2023-10: 436.35
+	2023-11: 475.31
+
+
+
+I'm a trader planning my next move. I would like to maximize my profit with '10000' dollars.
+
+Below are the actions I can take:
+Action 1. AMD: 10000 dollars
+Action 2. GME: 10000 dollars
+Action 3. META: 10000 dollars
+Action 4. NVDA: 10000 dollars
+
+
+
+I would like to know which action I should take based on the information provided above.
+You should format your response as a JSON object. The JSON object should contain the following keys:
+- decision: a string that describes the action you recommend the trader to take. The output format should be the same as the format of the actions listed above, e.g. Action 1. AMD: 10000 dollars
+- explanation: a string that describes, in detail, the reasoning behind your decision. You should include information on the expected price of each stock, as well as factors that affect them.

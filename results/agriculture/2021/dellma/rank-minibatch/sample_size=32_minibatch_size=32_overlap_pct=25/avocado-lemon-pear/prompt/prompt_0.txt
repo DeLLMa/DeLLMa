@@ -1,0 +1,102 @@
+Below is an agriculture report published by the USDA. It gives an overview of the fruit and nut market in the United States, with an additional focus on information pertaining to avocado, lemon, pear.
+
+Market Overview: the usda report indicates a general increase in u.s. production of major noncitrus fruits for 2021, with apples, grapes, peaches, cranberries, and sweet and tart cherries seeing a rise in production, while pear production is forecasted to decline. the impact of extreme weather events and california's ongoing drought on crop yields is uncertain. fruit and tree nut grower price indices remain high, with fluctuations throughout 2021. the consumer price index for fresh fruit also increased, suggesting higher retail prices. the northwest heat dome has introduced production uncertainty, particularly for tree fruits. the u.s. citrus season ended with declines in all commodities except california tangerines, and citrus prices are higher. tree nut supplies are forecasted to be down from the previous year's record, with smaller almond and walnut crops expected to increase grower prices. factors such as weather conditions, supply chain issues, and demand are influencing the market.
+
+- avocado:
+    - Product Summary: california avocado production has decreased, with wildfires and water restrictions impacting yields. however, u.s. avocado consumption has increased significantly, with imports from mexico and peru growing substantially. mexico dominates the u.s. avocado market, with imports peaking from may through july. peruvian imports compete during the summer months, traditionally a period of lower mexican imports.
+    - California Price and Yield Statistics: the average avocado yield is 2.87 TONS / ACRE and the average price per unit is 2,430 $ / TON.
+- lemon:
+    - Product Summary: lemon production is at its lowest in five years, with a 6 percent decrease for the fresh market. both california and arizona saw smaller crops, with arizona experiencing a significant drop due to heat damage. despite lower domestic production, fresh lemon imports increased, and u.s. fresh lemon exports decreased. grower prices for lemons have risen by 7 percent.
+    - California Price and Yield Statistics: the average lemon yield is 428 BOXES / ACRE and the average price per unit is 23.3 $ / BOX, ON TREE EQUIV.
+- pear:
+    - Product Summary: pear production is forecasted to be similar to the previous year, with losses in washington but gains in oregon and california. the impact of the northwest heat wave on production levels is still uncertain, but traditional pear trees with large canopies may offer some protection from heat damage.
+    - California Price and Yield Statistics: the average pear yield is 15.6 TONS / ACRE and the average price per unit is 565 $ / TON.
+
+I'm a farmer in California planning what fruit to plant next year. I would like to maximize my profit with '10' acres of land.
+
+Below are the actions I can take:
+Action 1. avocado: 10 acres
+Action 2. lemon: 10 acres
+Action 3. pear: 10 acres
+
+I would like to adopt a decision making under uncertainty framework to make my decision. The goal of you, the decision maker, is to choose an optimal action, while accounting for uncertainty in the unknown state. Previously, you have already provided a forecast of future state variables relevant to planting decisions. The state is a vector of 16 elements, each of which is a random variable. The state variables (and their most probable values) are enumerated below:
+- climate condition: {'continued drought': 'very likely', 'mild improvement': 'somewhat likely', 'significant improvement': 'unlikely'}
+- supply chain disruptions: {'minor disruptions': 'somewhat likely', 'moderate disruptions': 'likely', 'severe disruptions': 'somewhat unlikely'}
+- avocado price change: {'increase': 'likely', 'no change': 'somewhat likely', 'decrease': 'unlikely'}
+- avocado yield change: {'increase': 'unlikely', 'no change': 'somewhat likely', 'decrease': 'likely'}
+- lemon price change: {'increase': 'somewhat likely', 'no change': 'likely', 'decrease': 'somewhat unlikely'}
+- lemon yield change: {'increase': 'unlikely', 'no change': 'somewhat likely', 'decrease': 'likely'}
+- pear price change: {'increase': 'somewhat likely', 'no change': 'likely', 'decrease': 'somewhat unlikely'}
+- pear yield change: {'increase': 'somewhat unlikely', 'no change': 'somewhat likely', 'decrease': 'likely'}
+
+Below, I have sampled a set of state-action pairs, wherein states are sampled from the state belief distribution you provided and actions are sampled uniformly from the action space. I would like to construct a utility function from your comparisons of state-action pairs
+
+- State-Action Pair 1. State: climate condition: significant improvement, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: no change, lemon price change: no change, lemon yield change: no change, pear price change: no change, pear yield change: no change; Action 3. pear: 10 acres
+
+- State-Action Pair 2. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: increase, lemon price change: no change, lemon yield change: no change, pear price change: no change, pear yield change: no change; Action 2. lemon: 10 acres
+
+- State-Action Pair 3. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: no change, lemon yield change: no change, pear price change: increase, pear yield change: decrease; Action 3. pear: 10 acres
+
+- State-Action Pair 4. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: decrease, lemon price change: increase, lemon yield change: no change, pear price change: no change, pear yield change: decrease; Action 3. pear: 10 acres
+
+- State-Action Pair 5. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: increase, lemon price change: no change, lemon yield change: decrease, pear price change: increase, pear yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 6. State: climate condition: continued drought, supply chain disruptions: minor disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: decrease, lemon yield change: decrease, pear price change: decrease, pear yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 7. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: decrease, lemon price change: no change, lemon yield change: decrease, pear price change: decrease, pear yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 8. State: climate condition: significant improvement, supply chain disruptions: severe disruptions, avocado price change: decrease, avocado yield change: decrease, lemon price change: increase, lemon yield change: no change, pear price change: no change, pear yield change: increase; Action 3. pear: 10 acres
+
+- State-Action Pair 9. State: climate condition: significant improvement, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: no change, lemon price change: no change, lemon yield change: no change, pear price change: no change, pear yield change: no change; Action 2. lemon: 10 acres
+
+- State-Action Pair 10. State: climate condition: mild improvement, supply chain disruptions: moderate disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: decrease, lemon yield change: decrease, pear price change: no change, pear yield change: increase; Action 3. pear: 10 acres
+
+- State-Action Pair 11. State: climate condition: mild improvement, supply chain disruptions: moderate disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: decrease, lemon yield change: decrease, pear price change: no change, pear yield change: increase; Action 1. avocado: 10 acres
+
+- State-Action Pair 12. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: increase, lemon price change: increase, lemon yield change: decrease, pear price change: no change, pear yield change: increase; Action 2. lemon: 10 acres
+
+- State-Action Pair 13. State: climate condition: mild improvement, supply chain disruptions: minor disruptions, avocado price change: decrease, avocado yield change: decrease, lemon price change: no change, lemon yield change: no change, pear price change: no change, pear yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 14. State: climate condition: mild improvement, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: no change, lemon price change: no change, lemon yield change: no change, pear price change: no change, pear yield change: no change; Action 3. pear: 10 acres
+
+- State-Action Pair 15. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: decrease, lemon price change: decrease, lemon yield change: no change, pear price change: decrease, pear yield change: no change; Action 2. lemon: 10 acres
+
+- State-Action Pair 16. State: climate condition: significant improvement, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: no change, lemon price change: no change, lemon yield change: decrease, pear price change: increase, pear yield change: decrease; Action 3. pear: 10 acres
+
+- State-Action Pair 17. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: increase, lemon price change: no change, lemon yield change: decrease, pear price change: increase, pear yield change: decrease; Action 3. pear: 10 acres
+
+- State-Action Pair 18. State: climate condition: continued drought, supply chain disruptions: minor disruptions, avocado price change: no change, avocado yield change: increase, lemon price change: decrease, lemon yield change: decrease, pear price change: decrease, pear yield change: decrease; Action 3. pear: 10 acres
+
+- State-Action Pair 19. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: no change, lemon yield change: no change, pear price change: increase, pear yield change: decrease; Action 2. lemon: 10 acres
+
+- State-Action Pair 20. State: climate condition: continued drought, supply chain disruptions: minor disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: decrease, lemon yield change: decrease, pear price change: decrease, pear yield change: no change; Action 2. lemon: 10 acres
+
+- State-Action Pair 21. State: climate condition: significant improvement, supply chain disruptions: minor disruptions, avocado price change: increase, avocado yield change: no change, lemon price change: no change, lemon yield change: increase, pear price change: increase, pear yield change: increase; Action 2. lemon: 10 acres
+
+- State-Action Pair 22. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: no change, lemon yield change: no change, pear price change: increase, pear yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 23. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: decrease, lemon price change: decrease, lemon yield change: no change, pear price change: decrease, pear yield change: no change; Action 3. pear: 10 acres
+
+- State-Action Pair 24. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: no change, lemon price change: no change, lemon yield change: decrease, pear price change: increase, pear yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 25. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: no change, avocado yield change: no change, lemon price change: increase, lemon yield change: decrease, pear price change: increase, pear yield change: increase; Action 1. avocado: 10 acres
+
+- State-Action Pair 26. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: no change, avocado yield change: decrease, lemon price change: no change, lemon yield change: decrease, pear price change: decrease, pear yield change: increase; Action 1. avocado: 10 acres
+
+- State-Action Pair 27. State: climate condition: significant improvement, supply chain disruptions: severe disruptions, avocado price change: decrease, avocado yield change: decrease, lemon price change: increase, lemon yield change: no change, pear price change: no change, pear yield change: increase; Action 2. lemon: 10 acres
+
+- State-Action Pair 28. State: climate condition: continued drought, supply chain disruptions: minor disruptions, avocado price change: increase, avocado yield change: no change, lemon price change: no change, lemon yield change: no change, pear price change: decrease, pear yield change: no change; Action 3. pear: 10 acres
+
+- State-Action Pair 29. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: decrease, lemon price change: no change, lemon yield change: decrease, pear price change: decrease, pear yield change: decrease; Action 3. pear: 10 acres
+
+- State-Action Pair 30. State: climate condition: significant improvement, supply chain disruptions: minor disruptions, avocado price change: increase, avocado yield change: no change, lemon price change: no change, lemon yield change: increase, pear price change: increase, pear yield change: increase; Action 1. avocado: 10 acres
+
+- State-Action Pair 31. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: increase, lemon price change: increase, lemon yield change: decrease, pear price change: increase, pear yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 32. State: climate condition: continued drought, supply chain disruptions: minor disruptions, avocado price change: increase, avocado yield change: decrease, lemon price change: no change, lemon yield change: decrease, pear price change: decrease, pear yield change: no change; Action 1. avocado: 10 acres
+
+
+You should format your response as a JSON object. The JSON object should contain the following keys:
+- decision: a string that describes the state-action pair you recommend the farmer to take. The output format should be the same as the format of the state-action pairs listed above, e.g. State-Action Pair 5.
+- rank: a list of integers that ranks the state-action pairs in decreasing rank of preference. For example, if you think the first state-action pair is the most preferred, the second state-action pair is the second most preferred, and so on. For example, [1, 2, 3, 4, 5].
+- explanation: a string that describes, in detail, the reasoning behind your decision. You should include information on the expected yield and price of each fruit, as well as factors that affect them.

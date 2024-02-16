@@ -1,0 +1,96 @@
+Below is an agriculture report published by the USDA. It gives an overview of the fruit and nut market in the United States, with an additional focus on information pertaining to avocado, peach.
+
+Market Overview: the usda report indicates a general increase in u.s. production of major noncitrus fruits for 2021, with apples, grapes, peaches, cranberries, and sweet and tart cherries seeing a rise in production, while pear production is forecasted to decline. the impact of extreme weather events and california's ongoing drought on crop yields is uncertain. fruit and tree nut grower price indices remain high, with fluctuations throughout 2021. the consumer price index for fresh fruit also increased, suggesting higher retail prices. the northwest heat dome has introduced production uncertainty, particularly for tree fruits. the u.s. citrus season ended with declines in all commodities except california tangerines, and citrus prices are higher. tree nut supplies are forecasted to be down from the previous year's record, with smaller almond and walnut crops expected to increase grower prices. factors such as weather conditions, supply chain issues, and demand are influencing the market.
+
+- avocado:
+    - Product Summary: california avocado production has decreased, with wildfires and water restrictions impacting yields. however, u.s. avocado consumption has increased significantly, with imports from mexico and peru growing substantially. mexico dominates the u.s. avocado market, with imports peaking from may through july. peruvian imports compete during the summer months, traditionally a period of lower mexican imports.
+    - California Price and Yield Statistics: the average avocado yield is 2.87 TONS / ACRE and the average price per unit is 2,430 $ / TON.
+- peach:
+    - Product Summary: peach production is forecasted to be up 13 percent from the previous year, potentially the largest crop since 2017. california, south carolina, and georgia all expect increases in production despite weather challenges. however, california's forecast for processing clingstone peaches is down 3 percent from the previous year.
+    - California Price and Yield Statistics: the average peach yield is 13.7 TONS / ACRE and the average price per unit is 763 $ / TON.
+
+I'm a farmer in California planning what fruit to plant next year. I would like to maximize my profit with '10' acres of land.
+
+Below are the actions I can take:
+Action 1. avocado: 10 acres
+Action 2. peach: 10 acres
+
+I would like to adopt a decision making under uncertainty framework to make my decision. The goal of you, the decision maker, is to choose an optimal action, while accounting for uncertainty in the unknown state. Previously, you have already provided a forecast of future state variables relevant to planting decisions. The state is a vector of 16 elements, each of which is a random variable. The state variables (and their most probable values) are enumerated below:
+- climate condition: {'continued drought': 'very likely', 'mild improvement': 'somewhat likely', 'significant improvement': 'unlikely'}
+- supply chain disruptions: {'minor disruptions': 'somewhat likely', 'moderate disruptions': 'likely', 'severe disruptions': 'somewhat unlikely'}
+- avocado price change: {'increase': 'likely', 'no change': 'somewhat likely', 'decrease': 'unlikely'}
+- avocado yield change: {'increase': 'unlikely', 'no change': 'somewhat likely', 'decrease': 'likely'}
+- peach price change: {'increase': 'somewhat likely', 'no change': 'likely', 'decrease': 'somewhat unlikely'}
+- peach yield change: {'increase': 'somewhat likely', 'no change': 'likely', 'decrease': 'somewhat unlikely'}
+
+Below, I have sampled a set of state-action pairs, wherein states are sampled from the state belief distribution you provided and actions are sampled uniformly from the action space. I would like to construct a utility function from your comparisons of state-action pairs
+
+- State-Action Pair 1. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: decrease, peach price change: increase, peach yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 2. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: no change, peach price change: increase, peach yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 3. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: increase, peach price change: no change, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 4. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: decrease, avocado yield change: increase, peach price change: no change, peach yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 5. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: no change, peach price change: no change, peach yield change: decrease; Action 2. peach: 10 acres
+
+- State-Action Pair 6. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: decrease, peach price change: increase, peach yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 7. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: increase, peach price change: decrease, peach yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 8. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: decrease, peach price change: decrease, peach yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 9. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: no change, avocado yield change: no change, peach price change: decrease, peach yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 10. State: climate condition: continued drought, supply chain disruptions: severe disruptions, avocado price change: decrease, avocado yield change: increase, peach price change: no change, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 11. State: climate condition: significant improvement, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: no change, peach price change: increase, peach yield change: increase; Action 1. avocado: 10 acres
+
+- State-Action Pair 12. State: climate condition: mild improvement, supply chain disruptions: minor disruptions, avocado price change: increase, avocado yield change: increase, peach price change: no change, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 13. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: no change, avocado yield change: increase, peach price change: increase, peach yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 14. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: increase, peach price change: decrease, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 15. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: increase, peach price change: no change, peach yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 16. State: climate condition: continued drought, supply chain disruptions: minor disruptions, avocado price change: no change, avocado yield change: decrease, peach price change: no change, peach yield change: increase; Action 1. avocado: 10 acres
+
+- State-Action Pair 17. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: increase, peach price change: no change, peach yield change: decrease; Action 2. peach: 10 acres
+
+- State-Action Pair 18. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: decrease, avocado yield change: no change, peach price change: increase, peach yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 19. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: decrease, peach price change: no change, peach yield change: increase; Action 1. avocado: 10 acres
+
+- State-Action Pair 20. State: climate condition: continued drought, supply chain disruptions: minor disruptions, avocado price change: no change, avocado yield change: decrease, peach price change: no change, peach yield change: increase; Action 2. peach: 10 acres
+
+- State-Action Pair 21. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: decrease, peach price change: decrease, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 22. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: decrease, peach price change: no change, peach yield change: increase; Action 2. peach: 10 acres
+
+- State-Action Pair 23. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: decrease, avocado yield change: no change, peach price change: increase, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 24. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: decrease, avocado yield change: no change, peach price change: increase, peach yield change: decrease; Action 2. peach: 10 acres
+
+- State-Action Pair 25. State: climate condition: significant improvement, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: no change, peach price change: increase, peach yield change: increase; Action 2. peach: 10 acres
+
+- State-Action Pair 26. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: no change, avocado yield change: no change, peach price change: decrease, peach yield change: decrease; Action 2. peach: 10 acres
+
+- State-Action Pair 27. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: decrease, peach price change: increase, peach yield change: decrease; Action 2. peach: 10 acres
+
+- State-Action Pair 28. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: no change, avocado yield change: increase, peach price change: increase, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 29. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: no change, peach price change: no change, peach yield change: decrease; Action 1. avocado: 10 acres
+
+- State-Action Pair 30. State: climate condition: continued drought, supply chain disruptions: moderate disruptions, avocado price change: increase, avocado yield change: increase, peach price change: no change, peach yield change: no change; Action 1. avocado: 10 acres
+
+- State-Action Pair 31. State: climate condition: mild improvement, supply chain disruptions: severe disruptions, avocado price change: increase, avocado yield change: decrease, peach price change: increase, peach yield change: no change; Action 2. peach: 10 acres
+
+- State-Action Pair 32. State: climate condition: mild improvement, supply chain disruptions: minor disruptions, avocado price change: increase, avocado yield change: increase, peach price change: no change, peach yield change: no change; Action 1. avocado: 10 acres
+
+
+You should format your response as a JSON object. The JSON object should contain the following keys:
+- decision: a string that describes the state-action pair you recommend the farmer to take. The output format should be the same as the format of the state-action pairs listed above, e.g. State-Action Pair 5.
+- rank: a list of integers that ranks the state-action pairs in decreasing rank of preference. For example, if you think the first state-action pair is the most preferred, the second state-action pair is the second most preferred, and so on. For example, [1, 2, 3, 4, 5].
+- explanation: a string that describes, in detail, the reasoning behind your decision. You should include information on the expected yield and price of each fruit, as well as factors that affect them.

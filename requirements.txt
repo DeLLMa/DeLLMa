@@ -1,0 +1,8 @@
+choix==0.3.5
+matplotlib==3.8.0
+numpy==1.26.3
+openai==1.10.0
+pandas==2.2.0
+PyYAML==6.0.1
+scipy==1.12.0
+tqdm==4.65.0

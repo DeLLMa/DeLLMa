@@ -1,0 +1,27 @@
+Below is an agriculture report published by the USDA. It gives an overview of the fruit and nut market in the United States, with an additional focus on information pertaining to avocado, grapefruit, lemon.
+
+Market Overview: the usda report indicates a general increase in u.s. production of major noncitrus fruits for 2021, with apples, grapes, peaches, cranberries, and sweet and tart cherries seeing a rise in production, while pear production is forecasted to decline. the impact of extreme weather events and california's ongoing drought on crop yields is uncertain. fruit and tree nut grower price indices remain high, with fluctuations throughout 2021. the consumer price index for fresh fruit also increased, suggesting higher retail prices. the northwest heat dome has introduced production uncertainty, particularly for tree fruits. the u.s. citrus season ended with declines in all commodities except california tangerines, and citrus prices are higher. tree nut supplies are forecasted to be down from the previous year's record, with smaller almond and walnut crops expected to increase grower prices. factors such as weather conditions, supply chain issues, and demand are influencing the market.
+
+- avocado:
+    - Product Summary: california avocado production has decreased, with wildfires and water restrictions impacting yields. however, u.s. avocado consumption has increased significantly, with imports from mexico and peru growing substantially. mexico dominates the u.s. avocado market, with imports peaking from may through july. peruvian imports compete during the summer months, traditionally a period of lower mexican imports.
+    - California Price and Yield Statistics: the average avocado yield is 2.87 TONS / ACRE and the average price per unit is 2,430 $ / TON.
+- grapefruit:
+    - Product Summary: grapefruit production has been significantly affected by winter storm uri in texas, reducing the crop to half the volume predicted. florida continues to lead in grapefruit production, but the impact of citrus greening disease and decreased bearing acreage has led to lower production levels. with reduced domestic production, imports have increased, and the average price for grapefruit has risen.
+    - California Price and Yield Statistics: the average grapefruit yield is 457 BOXES / ACRE and the average price per unit is 24.33 $ / BOX, ON TREE EQUIV.
+- lemon:
+    - Product Summary: lemon production is at its lowest in five years, with a 6 percent decrease for the fresh market. both california and arizona saw smaller crops, with arizona experiencing a significant drop due to heat damage. despite lower domestic production, fresh lemon imports increased, and u.s. fresh lemon exports decreased. grower prices for lemons have risen by 7 percent.
+    - California Price and Yield Statistics: the average lemon yield is 428 BOXES / ACRE and the average price per unit is 23.3 $ / BOX, ON TREE EQUIV.
+
+I'm a farmer in California planning what fruit to plant next year. I would like to maximize my profit with '10' acres of land.
+
+Below are the actions I can take:
+Action 1. avocado: 10 acres
+Action 2. grapefruit: 10 acres
+Action 3. lemon: 10 acres
+
+
+
+I would like to know which action I should take based on the information provided above.
+You should format your response as a JSON object. The JSON object should contain the following keys:
+- decision: a string that describes the action you recommend the farmer to take. The output format should be the same as the format of the actions listed above, e.g. Action 1. avocado: 10 acres
+- explanation: a string that describes, in detail, the reasoning behind your decision. You should include information on the expected yield and price of each fruit, as well as factors that affect them.

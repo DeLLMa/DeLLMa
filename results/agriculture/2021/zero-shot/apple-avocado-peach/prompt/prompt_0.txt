@@ -1,0 +1,27 @@
+Below is an agriculture report published by the USDA. It gives an overview of the fruit and nut market in the United States, with an additional focus on information pertaining to apple, avocado, peach.
+
+Market Overview: the usda report indicates a general increase in u.s. production of major noncitrus fruits for 2021, with apples, grapes, peaches, cranberries, and sweet and tart cherries seeing a rise in production, while pear production is forecasted to decline. the impact of extreme weather events and california's ongoing drought on crop yields is uncertain. fruit and tree nut grower price indices remain high, with fluctuations throughout 2021. the consumer price index for fresh fruit also increased, suggesting higher retail prices. the northwest heat dome has introduced production uncertainty, particularly for tree fruits. the u.s. citrus season ended with declines in all commodities except california tangerines, and citrus prices are higher. tree nut supplies are forecasted to be down from the previous year's record, with smaller almond and walnut crops expected to increase grower prices. factors such as weather conditions, supply chain issues, and demand are influencing the market.
+
+- apple:
+    - Product Summary: apple production is forecasted to be up 3 percent from 2020/21 but down 5 percent from 2019/20. washington state's crop is expected to be larger, but there is concern over heat damage. export markets may remain sluggish due to high tariffs and shipping challenges, potentially pushing more apples into the domestic market and lowering prices. processing prices may rise due to declines in new york and michigan, which account for a significant portion of processed apples.
+    - California Price and Yield Statistics: the average apple yield is 19,000 LB / ACRE and the average price per unit is 0.244 $ / LB.
+- avocado:
+    - Product Summary: california avocado production has decreased, with wildfires and water restrictions impacting yields. however, u.s. avocado consumption has increased significantly, with imports from mexico and peru growing substantially. mexico dominates the u.s. avocado market, with imports peaking from may through july. peruvian imports compete during the summer months, traditionally a period of lower mexican imports.
+    - California Price and Yield Statistics: the average avocado yield is 2.87 TONS / ACRE and the average price per unit is 2,430 $ / TON.
+- peach:
+    - Product Summary: peach production is forecasted to be up 13 percent from the previous year, potentially the largest crop since 2017. california, south carolina, and georgia all expect increases in production despite weather challenges. however, california's forecast for processing clingstone peaches is down 3 percent from the previous year.
+    - California Price and Yield Statistics: the average peach yield is 13.7 TONS / ACRE and the average price per unit is 763 $ / TON.
+
+I'm a farmer in California planning what fruit to plant next year. I would like to maximize my profit with '10' acres of land.
+
+Below are the actions I can take:
+Action 1. apple: 10 acres
+Action 2. avocado: 10 acres
+Action 3. peach: 10 acres
+
+
+
+I would like to know which action I should take based on the information provided above.
+You should format your response as a JSON object. The JSON object should contain the following keys:
+- decision: a string that describes the action you recommend the farmer to take. The output format should be the same as the format of the actions listed above, e.g. Action 1. apple: 10 acres
+- explanation: a string that describes, in detail, the reasoning behind your decision. You should include information on the expected yield and price of each fruit, as well as factors that affect them.
