@@ -1,5 +1,13 @@
 # DeLLMa: A Framework for Decision Making Under Uncertainty with Large Language Models
 
+[Project Website](https://DeLLMa.github.io) | [Implementation](https://github.com/DeLLMa/DeLLMa/)
+
+Setup the environment by first downloading this repoistory and then running:
+
+```
+pip install -e .
+```
+
 Reproduce DeLLMa results by running
 
 ```
