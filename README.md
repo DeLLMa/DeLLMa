@@ -1,8 +1,8 @@
-# DeLLMa: A Framework for Decision Making Under Uncertainty with Large Language Models
+# DeLLMa: Decision Making Under Uncertainty with Large Language Models
 
 [Project Website](https://DeLLMa.github.io) | [Implementation](https://github.com/DeLLMa/DeLLMa/)
 
-Setup the environment by first downloading this repoistory and then running:
+Setup the environment by first downloading this repository and then running:
 
 ```
 pip install -e .
@@ -14,7 +14,7 @@ Reproduce DeLLMa results by running
 bash ./results.sh
 ```
 
-## Baslines
+## Baselines
 
 * Query GPT-4 for baseline methods. `[AGENT]` can be chosen from `{farmer, trader}`, and `[BASELINE]` can be chosen from `{zero-shot, cot, self-consistency}`
 
